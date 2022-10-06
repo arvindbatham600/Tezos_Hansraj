@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Iceberg', cursive;
+}
+
+.nav {
+    display: flex;
+    background-color: #073948;
+    
+}
+.image{
+    width: fit-content;
+    height: 1.5vh;
+}
+
+.image img {
+    width: 100px;
+    height: 12vh;
+}
+
+.navigation {
+
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    width:100vw;
+    height: fit-content;
+    text-align: right;
+    padding: 2vh 2vw;
+}
+
+.navigation>li {
+    margin: 0px 1.5vw;
+    list-style: none;
+    font-size: 1.8vw;
+    margin-top: 1.3vh;
+}
+
+.navigation>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.abc {
+    padding: 0.5vw 3vw;
+    border: 0.7vh solid #29AAD3;
+    border-radius: 30px;
+    background-color: #C1E7F3;
+    color: black;
+    font-size: 1.5vw;
+}
+
+.navigation>span a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 1050px) {
+    .container .nav .image img{
+        margin-top: 3px;
+        width: 10vw;
+        height: auto;
+    }
+  }
+  
