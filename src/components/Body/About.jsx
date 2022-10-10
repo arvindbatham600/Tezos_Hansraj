@@ -53,7 +53,7 @@ function About() {
           </Typography>
         </Box>
         <Box className="image1">
-          <img height={300} src={image1} alt="image" />
+          <img height={300} src={image1} alt="image " />
         </Box>
       </Box>
     </Box>
