@@ -1,10 +1,9 @@
 import React from "react";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography, Grid } from "@mui/material";
 import style from "../css/Body.module.css";
-import { Stack } from "@mui/system";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import IconButton from "@mui/material";
-
+import Discord from "./icons/Discord";
+import Linkedin from "./icons/Linkedin";
+import Twitter from "./icons/Twitter";
 
 const icon = {
   width: "50px",
@@ -46,7 +45,31 @@ function Footer() {
       </Box>
 
       <Box>
-         {/* here we ll add icons  */}
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Box>
+            <Discord />
+            <Typography variant="body1">Discord</Typography>
+          </Box>
+          <Box
+            sx={{
+              margin: "0 50px",
+            }}
+          >
+            <Linkedin />
+            <Typography variant="body1">LinkedIn</Typography>
+          </Box>
+          <Box>
+            <Twitter />
+            <Typography variant="body1">Twitter</Typography>
+          </Box>
+        </Box>
       </Box>
     </Box>
   );

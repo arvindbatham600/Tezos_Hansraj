@@ -9,7 +9,9 @@ import { Typography, Box } from "@mui/material";
 function Cards() {
   return (
     <Box>
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{
+        maxWidth: 345,
+      marginBottom: 3}}>
         <CardMedia
           component="img"
           height="140"

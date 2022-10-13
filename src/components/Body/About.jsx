@@ -7,7 +7,7 @@ import image1 from "../Assets/imag1.svg";
 function About() {
   return (
     <Box
-      className={style.about}
+      className={style.main}
       sx={{
         my: 2,
         padding: "30px",
@@ -27,6 +27,7 @@ function About() {
         sx={{
           display: "flex",
           flexDirection: "row",
+          flexWrap: "wrap",
           justifyContent: "space-around",
         }}
       >
@@ -53,7 +54,7 @@ function About() {
           </Typography>
         </Box>
         <Box className="image1">
-          <img height={300} src={image1} alt="image " />
+          <img width={300} src={image1} alt="image " />
         </Box>
       </Box>
     </Box>

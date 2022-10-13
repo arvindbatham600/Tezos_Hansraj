@@ -6,7 +6,7 @@ import Card from "../Card/Cards";
 function Event() {
   return (
     <Box
-      className={style.event}
+      className={style.main}
       sx={{
         my: 2,
         padding: "30px",
@@ -28,24 +28,24 @@ function Event() {
         sx={{
           display: "flex",
           flexDirection: "row",
+          flexWrap: "wrap",
           justifyContent: "space-around",
           paddingTop: "30px",
         }}
       >
-        <Card />
-        <Card />
-        <Card />
+        <Card className={style.card} />
+        <Card className={style.card} />
+        <Card className={style.card} />
       </Box>
 
       <Button
-              href="#!"
-              variant="contained"
-              color="secondary"
-              sx={{
-                  marginTop: "30px",
-                  borderRadius: "20px",
-              }}
-                  
+        href="#!"
+        variant="contained"
+        color="secondary"
+        sx={{
+          marginTop: "30px",
+          borderRadius: "20px",
+        }}
       >
         See More Events
       </Button>
