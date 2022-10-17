@@ -54,7 +54,7 @@ function Footer() {
           }}
         >
           <Box>
-            <Discord />
+            <Discord  />
             <Typography variant="body1">Discord</Typography>
           </Box>
           <Box
